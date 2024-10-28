@@ -1,0 +1,59 @@
+lab_dict feedback for zihan1.22
+g++ -std=c++11 -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c anagram_dict.cpp -o .objs/anagram_dict.o
+g++ -std=c++11 -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c cartalk_puzzle.cpp -o .objs/cartalk_puzzle.o
+g++ -std=c++11 -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c common_words.cpp -o .objs/common_words.o
+g++ -std=c++11 -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c fib.cpp -o .objs/fib.o
+g++ -std=c++11 -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c pronounce_dict.cpp -o .objs/pronounce_dict.o
+g++ -std=c++11 -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c   -c -o tests/unit_tests.o tests/unit_tests.cpp
+g++ -std=c++11 -lpthread -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable .objs/anagram_dict.o .objs/cartalk_puzzle.o .objs/common_words.o .objs/fib.o .objs/pronounce_dict.o tests/unit_tests.o -o test
+--- lab_dict ---
+Filters: test_get_anagrams
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test is a Catch v2.13.9 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_get_anagrams
+-------------------------------------------------------------------------------
+tests/unit_tests.cpp:41
+...............................................................................
+
+tests/unit_tests.cpp:41: FAILED:
+due to unexpected exception with message:
+  map::at
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+test_get_anagrams failed
+Filters: test_get_all_anagrams
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test is a Catch v2.13.9 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_get_all_anagrams
+-------------------------------------------------------------------------------
+tests/unit_tests.cpp:52
+...............................................................................
+
+tests/unit_tests.cpp:52: FAILED:
+due to unexpected exception with message:
+  map::at
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+test_get_all_anagrams failed
+Pass test_fib +1
+Pass test_memoized_fib +2
+Pass test_homophones +1
+Pass test_cartalk_puzzle +1
+Pass test_get_common_words_3 +1
+Pass test_get_common_words_999 +2
+
+Total: 8
