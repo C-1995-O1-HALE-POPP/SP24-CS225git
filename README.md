@@ -1,5 +1,4 @@
-# CS 225: Data Structures Assignment Repository
-
+# CS 225: Data Structures SP24
 This repository contains all labs and mps for CS225 in Spring 2024.
 
 Course webpage: https://courses.engr.illinois.edu/cs225/
